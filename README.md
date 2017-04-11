@@ -15,9 +15,11 @@ Untitled project is created with an empty Code.gs file.
 
 4. Copy token from step 3, then place it in run_like() function.
 
-`function run_like() {
-    var run = casper_like("Enter your token here");
-} // set triger per menit`
+>function run_like() {
+
+>    var run = casper_like("Enter your token here");
+
+>} // set triger per menit`
 
 5. Create a trigger for automatically run every minute
 [Imgur](http://i.imgur.com/PbrFUdc.png?1)
