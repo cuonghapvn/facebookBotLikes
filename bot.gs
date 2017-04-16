@@ -50,7 +50,16 @@ function casper_like(token) {
 }
 
 function get_cr_url(almt) {
-    var url_cr = UrlFetchApp.fetch(almt);
-    var json_cr = Utilities.jsonParse(url_cr.getContentText());
-    return json_cr;
+    //var url_cr = UrlFetchApp.fetch(almt);
+    //var json_cr = Utilities.jsonParse(url_cr.getContentText());
+    //return json_cr;
+    try {
+        var url_cr = UrlFetchApp.fetch(almt);
+        var responseCode = url_cr.getResponseCode()
+        if (responseCode === 200) {
+            var json_cr = Utilities.jsonParse(url_cr.getContentText());
+            return json_cr;
+        }
+    } catch (e) {}
+    return null
 }
