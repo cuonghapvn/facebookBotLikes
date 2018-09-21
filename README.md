@@ -10,8 +10,9 @@ Untitled project is created with an empty Code.gs file.
 
 2. Copy paste all code from bot.gs file in this repository to Code.gs file in your project
 
-3. Download "ATP Token.exe" from repository to your desktop, logon your facebook account and get Token.
-  *We wont archived your password, dont worry!
+3. ~~Download "ATP Token.exe" from repository to your desktop, logon your facebook account and get Token.
+  *We wont archived your password, dont worry!~~
+  Navigate to this page: [Link](https://evergreen.edu.vn/get-access-token-facebook/) to know how to get your token.
 
 4. Copy token from step 3, then place it in run_like() function.
 
